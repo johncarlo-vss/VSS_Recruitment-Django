@@ -1,0 +1,178 @@
+/* @Font-face fonts used for this application (Coolvetica and HKGrotesk) */
+
+@font-face {
+  font-family: 'Coolvetica-compressed';
+  src: url('../fonts/coolvetica/coolvetica-compressed.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Coolvetica-condensed';
+  src: url('../fonts/coolvetica/coolvetica-condensed.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Coolvetica-crammed';
+  src: url('../fonts/coolvetica/coolvetica-crammed.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Coolvetica-regular-italic';
+  src: url('../fonts/coolvetica/coolvetica-regular-italic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Coolvetica-regular';
+  src: url('../fonts/coolvetica/coolvetica-regular.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-Black';
+  src: url('../fonts/hkgrotesk/HKGrotesk-Black.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-Bold';
+  src: url('../fonts/hkgrotesk/HKGrotesk-Bold.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-BoldItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-BoldItalic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-BoldLegacy';
+  src: url('../fonts/hkgrotesk/HKGrotesk-BoldLegacy.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-BoldLegacyItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-BoldLegacyItalic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-ExtraBold';
+  src: url('../fonts/hkgrotesk/HKGrotesk-ExtraBold.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-Italic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-Italic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-LegacyItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-LegacyItalic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-Light';
+  src: url('../fonts/hkgrotesk/HKGrotesk-Light.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-LightItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-LightItalic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-LightLegacyItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-LightLegacyItalic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-Medium';
+  src: url('../fonts/hkgrotesk/HKGrotesk-Medium.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-MediumItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-MediumItalic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-MediumLegacy';
+  src: url('../fonts/hkgrotesk/HKGrotesk-MediumLegacy.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-MediumLegacyItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-MediumLegacyItalic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-Regular';
+  src: url('../fonts/hkgrotesk/HKGrotesk-Regular.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-RegularLegacy';
+  src: url('../fonts/hkgrotesk/HKGrotesk-RegularLegacy.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-SemiBold';
+  src: url('../fonts/hkgrotesk/HKGrotesk-SemiBold.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-SemiBoldItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-SemiBoldItalic.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-SemiBoldLegacy';
+  src: url('../fonts/hkgrotesk/HKGrotesk-SemiBoldLegacy.otf') format("opentype");
+}
+@font-face {
+  font-family: 'HKGrotesk-SemiBoldLegacyItalic';
+  src: url('../fonts/hkgrotesk/HKGrotesk-SemiBoldLegacyItalic.otf') format("opentype");
+}
+.section-landing {
+    width: 100%;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+.second-section h1 {
+  font-family: "Coolvetica-regular";
+  font-weight: 400;
+  font-size: 45px;
+  color: #E5E5E5;
+}
+
+.font-p {
+  font-family: "Coolvetica-regular";
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.second-section .section-bg {
+  height: 1000px;
+  background-image: url("../img/bg_image/blackBG.png");
+  /* background-color: #cccccc; */
+}
+
+.second-section .brushed-bg {
+  /* position: absolute; */
+  background-image: url("../img/bg_image/brushed.png");
+  background-size: 900px 650px;
+  /* margin-left: -300px; */
+  width: 100%;
+  /* padding: 100px; */
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.second-section .card {
+  border: 2.5px solid #2B2B2B;
+  border-radius: 15px;
+  background-color: #191919;
+  padding: 10px;
+}
+
+.btn-second-section-apply-now {
+  background-color: #80CC6B;
+  color: #000;
+  padding: 8px 45px;
+  margin-top: 6px;
+  margin-bottom: 6px
+}
+
+.btn-second-section-apply-now:hover {
+  background-color: #FD6161;
+  color: #E5E5E5;
+}
+
+.second-section img {
+  height: 60px;
+  width: 130px;
+}
+
+.second-section .card .font-p {
+  font-family: "Coolvetica-regular-italic";
+  font-weight: 400;
+  font-size: 15px;
+  color: #E5E5E5;
+}
+
+/* .second-section .card {
+  position: relative;
+} */
