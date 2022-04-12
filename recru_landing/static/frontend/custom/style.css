@@ -149,7 +149,11 @@ html {
   border: 2.5px solid #2B2B2B;
   border-radius: 15px;
   background-color: #191919;
-  padding: 10px;
+  padding: 13px;
+}
+
+.second-section .card:hover {
+  transform: scale(1.11, 1.11);
 }
 
 .btn-second-section-apply-now {
@@ -166,14 +170,15 @@ html {
 }
 
 .second-section img {
-  height: 60px;
-  width: 130px;
+  margin-top: 10px;
+  height: 70px;
+  width: 140px;
 }
 
 .second-section .card .font-p {
   font-family: "Coolvetica-regular-italic";
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 14px;
   color: #E5E5E5;
 }
 
