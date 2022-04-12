@@ -1,6 +1,69 @@
+@font-face {
+  font-family: 'Coolvetica-compressed';
+  src: local('Coolvetica'),
+       url('../fonts/coolvetica-compressed-hv.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Coolvetica-condensed';
+  src: local('Coolvetica'),
+       url('../fonts/coolvetica-condensed-rg.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Coolvetica-crammed';
+  src: local('Coolvetica'),
+       url('../fonts/coolvetica-crammed-rg.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Coolvetica-regular-italic';
+  src: local('Coolvetica'),
+       url('../fonts/coolvetica-rg-it.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Coolvetica-regular';
+  src: local('Coolvetica'),
+       url('../fonts/coolvetica-rg.otf') format("opentype");
+}
+
 .section-landing {
     width: 100%;
     background: white;
     position: relative;
     z-index: 2;
+}
+
+.second-section h1 {
+  font-family: "Coolvetica-regular";
+  font-weight: 400;
+  font-size: 45px;
+  color: #E5E5E5;
+}
+
+.font-p {
+  font-family: "Coolvetica-regular";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.second-section .section-bg {
+  height: 1000px;
+  background-image: url("../img/bg_image/blackBG.png");
+  /* background-color: #cccccc; */
+}
+
+.second-section .brushed-bg {
+  /* position: absolute; */
+  background-image: url("../img/bg_image/brushed.png");
+  background-size: 900px 650px;
+  /* margin-left: -300px; */
+  width: 100%;
+  /* padding: 100px; */
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.second-section .card {
+  border: 2.5px solid #2B2B2B;
+  border-radius: 15px;
+  background-color: #191919;
+  padding: 10px;
 }
