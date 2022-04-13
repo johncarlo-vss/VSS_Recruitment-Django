@@ -1,3 +1,20 @@
+/* Custom Scroll Bar Design */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  /* background: #888; */
+  background: #4C4C4C;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2B2B2B;
+}
+
 /* @Font-face fonts used for this application (Coolvetica and HKGrotesk) */
 
 @font-face {
@@ -104,6 +121,10 @@
   font-family: 'HKGrotesk-SemiBoldLegacyItalic';
   src: url('../fonts/hkgrotesk/HKGrotesk-SemiBoldLegacyItalic.otf') format("opentype");
 }
+
+html {
+  overflow-x: hidden;
+}
 .section-landing {
     width: 100%;
     background: white;
@@ -125,8 +146,14 @@
 }
 
 .second-section .section-bg {
-  height: 1000px;
-  background-image: url("../img/bg_image/blackBG.png");
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/bg_image/section-flyin-girl.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
   /* background-color: #cccccc; */
 }
 
@@ -145,31 +172,38 @@
   border: 2.5px solid #2B2B2B;
   border-radius: 15px;
   background-color: #191919;
-  padding: 10px;
+  padding: 13px;
+  transition: 0.5s;
+}
+
+.second-section .card:hover {
+  transform: scale(1.11, 1.13);
+  transition: 0.5s;
 }
 
 .btn-second-section-apply-now {
   background-color: #80CC6B;
   color: #000;
-  padding: 8px 45px;
+  padding:-1px 45px;
   margin-top: 6px;
-  margin-bottom: 6px
+  margin-bottom: 6px;
 }
 
 .btn-second-section-apply-now:hover {
   background-color: #FD6161;
-  color: #E5E5E5;
+  color: #000;
 }
 
 .second-section img {
-  height: 60px;
-  width: 130px;
+  margin-top: 10px;
+  height: 70px;
+  width: 140px;
 }
 
 .second-section .card .font-p {
-  font-family: "Coolvetica-regular-italic";
-  font-weight: 400;
-  font-size: 15px;
+  font-family: "Coolvetica-regular";
+  font-weight: 500;
+  font-size: 14px;
   color: #E5E5E5;
 }
 
@@ -234,8 +268,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
+  /* min-height: 35rem;
+  padding: 15rem 0; */
   background-image: url("/static/images/bg1.png");
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("static/images/bg1.png"); */
   background-position: center;
@@ -245,7 +279,7 @@
 }
 .masthead h1, .masthead .h1 {
   font-family: poppins;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: bold;
   background: #fff;
   -webkit-text-fill-color: transparent;
@@ -259,7 +293,7 @@
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
     font-size: 20px;
-    
+
   }
 }
 @media (min-width: 992px) {
@@ -270,8 +304,8 @@
   .masthead h1, .masthead .h1 {
     font-size:40px;
     letter-spacing: .1rem;
-   
-   
+
+
   }
   .masthead h2, .masthead .h2 {
     max-width: 30rem;
@@ -279,7 +313,7 @@
   }
 }
 
-.border { 
+.border {
   width: 400px;
   border-radius: 10px;
   background-color: #191919; /* For browsers that do not support gradients */
@@ -344,4 +378,17 @@
 
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
   opacity: 0.5;
+}
+
+.masthead .hover-btn:hover {
+  color: #000;
+  background-color: #80CC6B;
+}
+
+.masthead .apply-now-btn {
+  background-color: #FD6161;
+  height: 38px;
+  margin-top: 10px;
+  margin-left: -35px;
+  padding-top: 7px;
 }
