@@ -108,6 +108,9 @@ function initMap() {
   window.addEventListener("load", (event) => {
     toggleBounce();
   });
+  window.onload = (event) => {
+    toggleBounce();
+  };
 }
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
