@@ -1,4 +1,12 @@
 {% load static %}
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'frontend/custom/maps-style.css' %}" />
+<script src="{% static 'frontend/custom/maps.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjESLUI8OAHJAl6TRgeD5Dl7YmWbcOxYU&amp&callback=initMap&v=weekly"
+  async
+></script>
+
 <!--Bootstrap 4.0.0-->
 <link rel="stylesheet" href="{% static 'frontend/bootstrap-4.0.0/css/bootstrap.min.css' %}">
 <!--Custom CSS-->
