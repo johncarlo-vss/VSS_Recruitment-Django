@@ -105,7 +105,7 @@ function initMap() {
     map: map,
     title: "Virtual Staffing Solutions",
   });
-  window.addEventListener('load', (event) => {
+  window.addEventListener("load", (event) => {
     toggleBounce();
   });
 }
