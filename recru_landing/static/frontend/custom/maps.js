@@ -3,6 +3,7 @@ function initMap() {
 
   const labels = 'Virtual Staffing Solutions';
   let labelIndex = 0;
+  let market;
 
   const uluru = { lat: 11.025065, lng: 124.604183 };
 
@@ -91,7 +92,8 @@ function initMap() {
     ],
   });
   // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
+  marker = new google.maps.Marker({
+    animation: google.maps.Animation.DROP,
     position: uluru,
     // label: {
     //   text: labels,
@@ -101,5 +103,16 @@ function initMap() {
     //   textFill: "red"
     // },
     map: map,
+    title: "Virtual Staffing Solutions",
   });
+  window.addEventListener('load', (event) => {
+    toggleBounce();
+  });
+}
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
 }
