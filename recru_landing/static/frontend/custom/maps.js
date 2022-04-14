@@ -3,13 +3,18 @@ function initMap() {
 
   const labels = 'Virtual Staffing Solutions';
   let labelIndex = 0;
-  let market;
+  // let marker_carlosta;
+  // let marker_tacloban;
+  // let marker_chinatown;
 
-  const uluru = { lat: 11.025065, lng: 124.604183 };
+  const carlosta = { lat: 11.025065, lng: 124.604183 };
+  const chinatown = { lat: 11.018179, lng: 124.606279 };
+  const tacloban = { lat: 11.191775, lng: 124.992549 };
+  const center = { lat: 11.091933, lng: 124.783100 }
 
   const map = new google.maps.Map(document.getElementById("map"), {
-    center: uluru,
-    zoom: 12,
+    center: chinatown,
+    zoom: 15,
     styles: [
       { elementType: "geometry", stylers: [{ color: "#0d0d0d" }] },
       { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -91,31 +96,115 @@ function initMap() {
       },
     ],
   });
+
   // The marker, positioned at Uluru
-  marker = new google.maps.Marker({
-    animation: google.maps.Animation.DROP,
-    position: uluru,
-    // label: {
-    //   text: labels,
-    //   fontFamily: "Arial",
-    //   color: "#E5E5E5",
-    //   fontSize: "18px",
-    //   textFill: "red"
-    // },
-    map: map,
-    title: "Virtual Staffing Solutions",
-  });
-  window.addEventListener("load", (event) => {
-    toggleBounce();
-  });
-  window.onload = (event) => {
-    toggleBounce();
-  };
+
+  // For VSS Carlosta
+    marker_carlosta = new google.maps.Marker({
+      animation: google.maps.Animation.DROP,
+      position: carlosta,
+      map: map,
+      title: "Virtual Staffing Solutions",
+    });
+    window.addEventListener("load", (event) => {
+      toggleBounce_carlosta();
+    });
+    window.onload = (event) => {
+      toggleBounce_carlosta();
+    };
+
+    const infowindow_carlosta = new google.maps.InfoWindow({
+      content: "<p style='color: #000; font-size: 15px; font-weight:500'>VIRTUAL STAFFING SOLUTIONS &nbsp <br/> Carlosta Site </p><p style='margin-top: -10px; font-weight:400'>Infront of Robinsons Place Ormoc</p><p style='margin-top: -14px; font-weight:400'>Inside the Carlosta Hotel</p><p style='margin-top: -14px; font-weight:400'>Ormoc City</p><p style='margin-top: -14px;  font-weight:400; margin-bottom: 0;'>Leyte, Philippines</p>",
+    });
+    google.maps.event.addListener(marker_carlosta, "click", () => {
+      infowindow_carlosta.open(map, marker_carlosta);
+    });
+
+    marker_carlosta.addListener("click", () => {
+      map.setZoom(17);
+      map.setCenter(marker_carlosta.getPosition());
+    });
+
+  // For VSS Chinatown
+    marker_chinatown = new google.maps.Marker({
+      animation: google.maps.Animation.DROP,
+      position: chinatown,
+      map: map,
+      title: "Virtual Staffing Solutions",
+    });
+    window.addEventListener("load", (event) => {
+      toggleBounce_chinatown();
+    });
+    window.onload = (event) => {
+      toggleBounce_chinatown();
+    };
+
+
+    const infowindow_chinatown = new google.maps.InfoWindow({
+      content: "<p style='color: #000; font-size: 15px; font-weight:500'>VIRTUAL STAFFING SOLUTIONS &nbsp <br/>Chinatown East Gate Site</p><p style='margin-top: -10px; font-weight:400'>In 2nd Floor and 3rd Floor of </p><p style='margin-top: -14px; font-weight:400'>Chinatown East Gate</p><p style='margin-top: -14px; font-weight:400'>Ormoc City</p><p style='margin-top: -14px;  font-weight:400; margin-bottom: 0;'>Leyte, Philippines</p>",
+    });
+    google.maps.event.addListener(marker_chinatown, "click", () => {
+      infowindow_chinatown.open(map, marker_chinatown);
+    });
+
+    marker_chinatown.addListener("click", () => {
+      map.setZoom(17);
+      map.setCenter(marker_chinatown.getPosition());
+    });
+
+  // For VSS Tacloban
+    marker_tacloban = new google.maps.Marker({
+      animation: google.maps.Animation.DROP,
+      position: tacloban,
+      map: map,
+      title: "Virtual Staffing Solutions",
+    });
+    window.addEventListener("load", (event) => {
+      toggleBounce_tacloban();
+    });
+    window.onload = (event) => {
+      toggleBounce_tacloban();
+    };
+
+
+    const infowindow_tacloban = new google.maps.InfoWindow({
+      content: "<p style='color: #000; font-size: 15px; font-weight:500'>VIRTUAL STAFFING SOLUTIONS &nbsp<br/> Tacloban Site</p><p style='margin-top: -10px; font-weight:400'>Dragon Ball Compound</p><p style='margin-top: -14px; font-weight:400'>Maharlika Highway</p><p style='margin-top: -14px; font-weight:400'>Tacloban City</p><p style='margin-top: -14px;  font-weight:400; margin-bottom: 0;'>Leyte, Philippines</p>",
+    });
+    google.maps.event.addListener(marker_tacloban, "click", () => {
+      infowindow_tacloban.open(map, marker_tacloban);
+    });
+
+    marker_tacloban.addListener("click", () => {
+      map.setZoom(17);
+      map.setCenter(marker_tacloban.getPosition());
+    });
+
+
+
 }
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
+
+
+// Bouncing marker for VSS Carlosta
+function toggleBounce_carlosta() {
+  if (marker_carlosta.getAnimation() !== null) {
+    marker_carlosta.setAnimation(null);
   } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
+    marker_carlosta.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+// Bouncing marker for VSS Chinatown
+function toggleBounce_chinatown() {
+  if (marker_chinatown.getAnimation() !== null) {
+    marker_chinatown.setAnimation(null);
+  } else {
+    marker_chinatown.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+// Bouncing marker for VSS Tacloban
+function toggleBounce_tacloban() {
+  if (marker_tacloban.getAnimation() !== null) {
+    marker_tacloban.setAnimation(null);
+  } else {
+    marker_tacloban.setAnimation(google.maps.Animation.BOUNCE);
   }
 }
