@@ -6,6 +6,29 @@
     <meta charset="utf-8">
     <title></title>
     {% include "top.html" %}
+
+    <style>
+      #file {
+      background-color:#8435C2;
+      color: white;
+      padding: 3px 11px;
+      font-family: sans-serif;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      margin-top:10px;
+      font-size: 15px;
+      margin-left: -35px;
+      width: 100px;
+
+    }
+
+    #file-chosen{
+      margin-left: 0.3rem;
+      font-family: sans-serif;
+      color: #efefef;
+      font-size: 13px;
+    }
+    </style>
   </head>
 
   <body>
@@ -14,25 +37,27 @@
     <div class="first-section">
       <section class="section-landing">
         <header class="masthead">
-          <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-          <div class="container">
-            <a class="navbar-brand" href="#page-top"> <img src="/static/images/bgtrans.png" width="160" height="80"  style="margin-right: 15px"class="d-inline-block align-center " alt=""> <img src="/static/images/b1.png" width="160" height="80"  style="margin-right: 15px"class="d-inline-block align-center " alt=""></a>
-            <div class="row">
-              <div class="col-9">
-                <form class="search">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search Jobs" aria-label="Search" style="color: #fff;background-color: transparent; border-radius: 20px; border-width: 2px; border-color: #fff;">
-                </form>
+
+        <nav class="navbar navbar-expand-sm" style="margin-left: 50px; margin-right:60px">
+          <a class="navbar-brand" href="#page-top"><img src="/static/images/bgtrans.png" width="160" height="80"  style="margin-right: 15px; "class="d-inline-block align-center " alt=""> <img src="/static/images/b1.png" width="160" height="80"  style="margin-right: 15px"class="d-inline-block align-center " alt=""> </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search Jobs" aria-label="Search" style="width: 300px;color: #fff;background-color: transparent; border-radius: 20px; border-width: 2px; border-color: #fff;">
+              <div class="material-icons" style="font-size: 40px; color: #fff">
+                account_circle
               </div>
-              <div class="col-3" style="margin-right: auto; margin-left: auto;">
-                <div class="material-icons" style="font-size: 40px; color: #fff">
-                  account_circle
-                </div>
-              </div>
-            </div>
+            </form>
           </div>
         </nav>
-          <div class="container-fluid h-75 justify-content-center align-items-center" >
+
+          <div class="container-fluid h-75 justify-content-center align-items-center" style="margin-top: 20px;">
             <div class="row h-100 align-items-start justify-content-start text-left">
               <div class="col-lg-7 align-self-center page-title">
                 <h2 class="mb-1" style="font-size: 53px; font-family: Coolvetica-regular; color: white; margin-left: 60px;">Fullfil your personal</h2>
@@ -42,37 +67,37 @@
 
                 <div class="list-inline">
                   <span style="display: inline-block; margin-left: 60px;">
-                    <h3 style="font-family: poppins; color: #fff !important; font-size: 25px;">
+                    <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 28px;">
                       <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px; background-color: #fff; border-radius: 55px;"></i>  Competitive Salary</h3>
                   </span>
                 </div>
                 <div class="list-inline" style="margin-top: 10px">
                   <span style="display: inline-block; margin-left: 60px;">
-                    <h3 style="font-family: poppins; color: #fff !important; font-size: 25px;">
+                    <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 28px;">
                       <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i>  Rapid Career Development</h3>
                   </span>
                 </div>
                 <div class="list-inline" style="margin-top: 10px">
                   <span style="display: inline-block; margin-left: 60px;">
-                    <h3 style="font-family: poppins; color: #fff !important; font-size: 25px;">
+                    <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 28px;">
                       <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i> Extended Healthcare</h3>
                   </span>
                 </div>
                 <div class="list-inline" style="margin-top: 10px">
                   <span style="display: inline-block; margin-left: 60px;">
-                    <h3 style="font-family: poppins; color: #fff !important; font-size: 25px;">
+                    <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 28px;">
                       <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i> Leadership Training</h3>
                   </span>
                 </div>
                 <div class="list-inline" style="margin-top: 10px">
                   <span style="display: inline-block;  margin-left: 60px;">
-                    <h3 style="font-family: poppins; color: #fff !important; font-size: 25px;">
+                    <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 28px;">
                       <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i> Rewards and Recognition</h3>
                   </span>
                 </div>
                 <div class="list-inline" style="margin-top: 10px">
                   <span style="display: inline-block;  margin-left: 60px;">
-                    <h3 style="font-family: poppins; color: #fff !important; font-size: 25px;">
+                    <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 28spx;">
                       <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i> Work Life Balance</h3>
                   </span>
                 </div>
@@ -84,32 +109,41 @@
                 </div>
               </div>
               <div class="col-lg-5 align-self-center page-title">
-                <div class="border" style="width: 340px;height: 390px; margin-left: 165px; ">
+                <div class="border" style="width: 365px;height: 475px; margin-left: 140px; margin-top: 10px; ">
                   <form action="" style="background-color: #191919;border-radius:10px;padding:70px;height: 100%;">
-                    <div class="list-inline" style="margin-top: -50px">
+                    <div class="list-inline" style="margin-top: -65px">
                       <span>
-                        <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 35px; margin-left: -40px;">
+                        <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 43px; margin-left: -40px; ">
                           Start your</h3>
                       </span>
                       <span>
-                        <h3 style="font-family: Coolvetica-regular; color: #fff !important; font-size: 35px;margin-left: -40px; margin-top: -10px;">
+                        <h3 style="width:1000px ;font-family: Coolvetica-regular; color: #fff !important; font-size: 43px;margin-left: -40px; margin-top: -15px;">
                           career with us!</h3>
                       </span>
                     </div>
 
-                    <input class="form-control form-control" type="text" placeholder="Full Name" style="background-color:#0D0D0D; margin-bottom: 13px; border-color: transparent; width: 270px; margin-left: -40px;  margin-top: 15px; color: #E5E5E5">
-                    <input class="form-control form-control" type="text" placeholder="Email Address" style="background-color:#0D0D0D; margin-bottom: 13px;border-color: transparent;width: 270px; margin-left: -40px; color: #E5E5E5">
-                    <input class="form-control form-control" type="text" placeholder="Mobile Number"style="background-color:#0D0D0D; margin-bottom: 7px;border-color: transparent;width: 270px; margin-left: -40px; color: #E5E5E5">
+                    <input class="form-control form-control" type="text" placeholder="First Name" style="background-color:#0D0D0D; margin-bottom: 5px; border-color: transparent; width: 295px; margin-left: -40px;  margin-top: 10px; color: #E5E5E5">
+                    <input class="form-control form-control" type="text" placeholder="Last Name" style="background-color:#0D0D0D; margin-bottom: 10px; border-color: transparent; width: 295px; margin-left: -40px;  margin-top: 10px; color: #E5E5E5">
+                    <input class="form-control form-control" type="text" placeholder="Email Address" style="background-color:#0D0D0D; margin-bottom: 10px;border-color: transparent;width: 295px; margin-left: -40px; color: #E5E5E5">
+                    <input class="form-control form-control" type="text" placeholder="Mobile Number"style="background-color:#0D0D0D; margin-bottom: 7px;border-color: transparent;width: 295px; margin-left: -40px; color: #E5E5E5">
 
-                    <label for="" style="color:#fff; margin-left: -35px; font-size: 12px;">Do you have call center experience?</label>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="yes" value="option1" style="margin-left: -60px; background-color: #0D0D0D">
-                        <label class="form-check-label" for="yes" style="color:#fff; margin-left:-35px;">Yes</label>
+                    <label for="" style="color:#fff; margin-left: -35px; font-size: 15px;">Do you have call center experience?</label><br>
+                      <div class="form-check form-check-inline" style="margin-left: -55px">
+                        <input class="form-check-input" type="checkbox" id="yes" value="option1" style="margin-left:0px; background-color: #0D0D0D; margin-top:4px;">
+                        <label class="form-check-label" for="yes" style="color:#fff; margin-left:5px; margin-top:-20px;">Yes</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="no" value="option2" style="margin-left: -25px; background-color: #0D0D0D">
+                        <input class="form-check-input" type="checkbox" id="no" value="option2" style="margin-left: -10px; background-color: #0D0D0D; margin-top:4px;">
                         <label class="form-check-label" for="no" style="color:#fff;">No</label>
-                      </div>
+                      </div><br>
+                      <!-- actual upload which is hidden -->
+                        <input type="file" id="actual-btn" hidden/>
+
+                        <!-- our custom upload button -->
+                        <label id="file" for="actual-btn">Upload CV</label>
+
+                        <!-- name of file chosen -->
+                        <span id="file-chosen">No file chosen</span>
 
                       <button type="button" class="btn hover-btn apply-now-btn">Apply Now!</button>
                   </form>
@@ -139,7 +173,7 @@
             <div class="col-6" style="text-align:center;">
             </div>
             <div class="col-6" style="left: 90px;">
-              <div class="row" style="padding: 8px">
+              <div class="row" style="padding: 8px; margin-left: -1px;">
                 <div class="card">
                   <img src="{% static 'frontend/img/vssicons/vsscares.png' %}" alt="VSSCares" style="height: 72px;">
                   <p class="font-p" style="text-align: center; padding-top: 20px;">
@@ -167,7 +201,7 @@
                 </div>
               </div>
 
-              <div class="row" style="padding: 8px">
+              <div class="row" style="padding: 8px; margin-left: -1px;">
                 <div class="card">
                   <img src="{% static 'frontend/img/vssicons/vssrewards.png' %}" alt="VSS Rewards" style="height: 45px">
                   <p class="font-p" style="text-align: center; padding-top: 20px;">
@@ -196,7 +230,7 @@
                 </div>
               </div>
 
-              <div class="row" style="padding: 8px">
+              <div class="row" style="padding: 8px;margin-left: -1px;">
                 <div class="card">
                   <img src="{% static 'frontend/img/vssicons/vssrockstar.png' %}" alt="VSS Rockstar" style="height: 70px">
                   <p class="font-p" style="text-align: center; padding-top: 20px;">
@@ -232,116 +266,13 @@
     <!-- 3rd section containing carousel with images -->
     <div class="third-section">
       <section class="slider-section">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-            <li data-target="#carousel" data-slide-to="3"></li>
-            <li data-target="#carousel" data-slide-to="4"></li>
-            <li data-target="#carousel" data-slide-to="5"></li>
-            <li data-target="#carousel" data-slide-to="6"></li>
-            <li data-target="#carousel" data-slide-to="7"></li>
-            <li data-target="#carousel" data-slide-to="8"></li>
-            <li data-target="#carousel" data-slide-to="9"></li>
-            <li data-target="#carousel" data-slide-to="10"></li>
-            <li data-target="#carousel" data-slide-to="11"></li>
-            <li data-target="#carousel" data-slide-to="12"></li>
-            <li data-target="#carousel" data-slide-to="13"></li>
-            <li data-target="#carousel" data-slide-to="14"></li>
-            <li data-target="#carousel" data-slide-to="15"></li>
-            <li data-target="#carousel" data-slide-to="16"></li>
-            <li data-target="#carousel" data-slide-to="17"></li>
-            <li data-target="#carousel" data-slide-to="18"></li>
-            <li data-target="#carousel" data-slide-to="19"></li>
-            <li data-target="#carousel" data-slide-to="20"></li>
-            <li data-target="#carousel" data-slide-to="21"></li>
-            <li data-target="#carousel" data-slide-to="22"></li>
-          </ol> <!-- End of Indicators -->
-
-          <!-- Carousel Content -->
+        <div class="carousel slide"> 
           <div class="carousel-inner" role="listbox">
-
             <div class="carousel-item active" style="background-image: url('/static/frontend/img/carousel_image/vsscares0.png');">
             </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares1.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares2.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares3.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares4.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares5.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares6.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares7.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares8.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares9.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares10.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares11.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares12.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares13.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares14.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares15.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares16.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares17.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares18.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares19.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares20.png');">
-            </div> <!-- End of Carousel Item -->
-
-            <div class="carousel-item" style="background-image: url('/static/frontend/img/carousel_image/vsscares21.png');">
-            </div> <!-- End of Carousel Item -->
-
-          </div> <!-- End of Carousel Content -->
-
-          <!-- Previous & Next -->
-          <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-        </div> <!-- End of Carousel -->
-      </section> <!-- End of Slider -->
+          </div> 
+        </div> 
+      </section>
     </div>
 
     <!-- 4th section containing Google Maps API -->
@@ -376,5 +307,17 @@
     </footer>
 
     {% include "bottom.html" %}
+
+    <script type="text/javascript"> 
+      const actualBtn = document.getElementById('actual-btn');
+      const fileChosen = document.getElementById('file-chosen');
+      actualBtn.addEventListener('change', function(){
+        fileChosen.textContent = this.files[0].name
+      })
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
